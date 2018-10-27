@@ -37,6 +37,12 @@ e-mail   :  robert.fach@gmx.net
 #include <menuIO/keyIn.h>
 
 // SDCard
+// --------------------------
+// on the Rev 1.1.0 Board you have connect the following Pins from J4
+//  J4 Pin 1 -> D50 (AT-Mega)
+//  J4 Pin 2 -> J3 Pin 5
+//  J4 Pin 4 -> D41 (AT-Mega)
+//  J4 Pin 6 -> J3 Pin 3
 #include <SD.h>
 const uint8_t BASE_NAME_SIZE = sizeof(FILE_BASE_NAME) - 1;
 char fileName[] = FILE_BASE_NAME "00.xml";
